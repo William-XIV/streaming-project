@@ -1,27 +1,49 @@
+/* reset */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-
+html{
+    font-size: 62.5%;
+}
 body{
     background-color: var(--colors-primary);
     font-family: 'Poppins';
     font-style: normal;
     margin: 0px;
+    font-size: 1.6rem;
 }
 header{
     text-transform: capitalize;
     background-color:var(--colors);
     color: var(--color-text-title);
 }
-h1{
-    font-size: 60px;
+a{
+    text-decoration: none;
 }
-ul li{
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+figure{
+    margin: 0;
+}
+h1,h2,p,h3,ul,ol,figure{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.main-grid-cover ul{
+    font-size: 0;
+}
+.main-grid-cover ul li{
     display: inline-block;
+    font-size: initial;
 }
 nav ul li a{
     display: inline-block;
     font-family: 'Poppins';
     text-decoration: none;
-    font-size: 30px;
+    font-size: 3.0rem;
     background-color: var(--colors);
     color: var(--colors-primary);
 }
@@ -30,71 +52,76 @@ nav ul li a{
     --colors-primary: #FFC300;
     --colors: #000814;
 }
-main{
-    margin: 0px;
-    text-align: center;
-    width: auto;
-    font-size: 0px;
-}
 h2{
     color: var(--color-text-title);
-    font-size: 50px;
+    font-size: 5rem;
     text-transform: capitalize;
+}
+
+/* theme */
+header{
+    margin-bottom: 2rem;
+}
+header h1{
+    line-height: 7rem;
+    text-align: center;
+}
+section h2{
+    text-align: center;
+}
+.main-grid-cover{
+    max-width: 120rem;
+    margin: 0 auto;
 }
 section ul li{
     display: inline-block;
-    width: calc(100% / 3 - 3px);
+    width: calc(100% / 4 );
     margin: auto;
+    vertical-align: top;
+    
 }
 li figure{
     margin: auto;
 }
-figure {
-    border: thin #c0c0c0 solid;
+.main-grid-cover figure {
     display: flex;
     flex-flow: column;
-    padding: 5px;
-    max-width: 220px;
+    padding: .5rem;
     margin: auto;
 }
-img {
-    max-width: 220px;
-    max-height: 200px;
-}
-figcaption {
+
+.main-grid-cover figure figcaption {
     background-color: #222;
     color: #fff;
-    font: italic smaller sans-serif;
-    display: inline-block;
     padding: 1px;
-    text-align: center;
+    padding: .5rem;
+   
 }
-a{
-    font-size: 15px;
-    word-spacing: 10px;
+.main-grid-cover figure figcaption ul{
+    display: block;
+    line-height: 2rem;
+}
+.main-grid-cover figure figcaption ul li{
+    width: 100%;
+    display: list-item;
+    margin: 0;
+}
+.main-grid-cover figure  li{
+    font-size: 1.5rem;
+    word-spacing: 1.0rem;
 }
 p{
     width: 12rem;
-    font-size: 15px;
-    word-spacing: 5px;
+    font-size: 1.5rem;
+    word-spacing: .5rem;
     text-align: center;
 }
-li article{
-    display: inline-block;
-}
 h4{
-    font-size: 30px;
+    font-size: 3.0rem;
 }
 a{
     display: block;
-    word-spacing: 3px;
-}
-fieldset article p{
-    color: red;
-    text-align: center;
-}
-fieldset article p label{
-    color: var(--colors);
+    word-spacing: .3;
 }
 h3{
     font-size: 1rem;
@@ -104,10 +131,8 @@ footer{
     text-align: center;
     background-color: var(--colors);
     color: var(--color-text-title);
-    word-spacing: 3px;
+    word-spacing: .3;
 }
 footer a{
     color: var(--colors-primary);
-    text-decoration: none;
-    font-size: 12px;
 }
