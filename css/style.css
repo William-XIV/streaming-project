@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+body{
+    background-color: var(--colors-primary);
+    font-family: 'Poppins';
+    font-style: normal;
+    margin: 0px;
+}
+header{
+    text-transform: capitalize;
+    background-color:var(--colors);
+    color: var(--color-text-title);
+}
+h1{
+    font-size: 60px;
+}
+ul li{
+    display: inline-block;
+}
+nav ul li a{
+    display: inline-block;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-size: 30px;
+    background-color: var(--colors);
+    color: var(--colors-primary);
+}
+:root{
+    --color-text-title: #ffffff;
+    --colors-primary: #FFC300;
+    --colors: #000814;
+}
+main{
+    margin: 0px;
+    text-align: center;
+    width: auto;
+    font-size: 0px;
+}
+h2{
+    color: var(--color-text-title);
+    font-size: 50px;
+    text-transform: capitalize;
+}
+section ul li{
+    display: inline-block;
+    width: calc(100% / 3 - 3px);
+    margin: auto;
+}
+li figure{
+    margin: auto;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+img {
+    max-width: 220px;
+    max-height: 200px;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    display: inline-block;
+    padding: 1px;
+    text-align: center;
+}
+a{
+    font-size: 15px;
+    word-spacing: 10px;
+}
+p{
+    width: 12rem;
+    font-size: 15px;
+    word-spacing: 5px;
+    text-align: center;
+}
+li article{
+    display: inline-block;
+}
+h4{
+    font-size: 30px;
+}
+a{
+    display: block;
+    word-spacing: 3px;
+}
+fieldset article p{
+    color: red;
+    text-align: center;
+}
+fieldset article p label{
+    color: var(--colors);
+}
+h3{
+    font-size: 1rem;
+    color: var(--color-text-title);
+}
+footer{
+    text-align: center;
+    background-color: var(--colors);
+    color: var(--color-text-title);
+    word-spacing: 3px;
+}
+footer a{
+    color: var(--colors-primary);
+    text-decoration: none;
+    font-size: 12px;
+}
