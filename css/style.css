@@ -55,7 +55,7 @@ nav ul li a{
 h2{
     color: var(--color-text-title);
     font-size: 5rem;
-    text-transform: capitalize;
+    text-transform: initial;
 }
 
 
@@ -77,10 +77,9 @@ section h2, h3{
 }
 section ul li{
     display: inline-block;
-    width: calc(100% / 4 );
+    width: calc(100% / 4);
     margin: auto;
     vertical-align: top;
-    
 }
 li figure{
     margin: auto;
@@ -91,12 +90,10 @@ li figure{
     padding: .5rem;
     margin: auto;
 }
-
 .main-grid-cover figure figcaption {
     background-color: #222;
     color: #fff;
     padding: .5rem;
-   
 }
 .main-grid-cover figure figcaption ul{
     display: block;
@@ -112,25 +109,29 @@ li figure{
     font-size: 1.5rem;
     word-spacing: .1rem;
 }
-p{
-    font-size: 1.5rem;
+main p{
+    font-size: 2rem;
     text-align: center;
-}
-h4{
-    font-size: 3rem;
-}
-a{
-    display: block;
-}
-h3{
-    font-size: 1rem;
-    color: var(--color-text-title);
+    line-height: 10rem;
 }
 footer{
     text-align: center;
     background-color: var(--colors);
     color: var(--color-text-title);
+    letter-spacing: .1rem;
+}
+h3{
+    font-size: 3rem;
+    color: var(--color-text-title);
+}
+footer section{
+    display: inline-block;
+    margin: 5rem;
 }
 footer a{
     color: var(--colors-primary);
+}
+footer p{
+    font-size: 1.5rem;
+    text-align: center;
 }
