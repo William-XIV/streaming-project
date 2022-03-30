@@ -58,6 +58,7 @@ h2{
     text-transform: capitalize;
 }
 
+
 /* theme */
 header{
     margin-bottom: 2rem;
@@ -65,8 +66,9 @@ header{
 header h1{
     line-height: 7rem;
     text-align: center;
+    color: var(--colors-primary);
 }
-section h2{
+section h2, h3{
     text-align: center;
 }
 .main-grid-cover{
@@ -93,7 +95,6 @@ li figure{
 .main-grid-cover figure figcaption {
     background-color: #222;
     color: #fff;
-    padding: 1px;
     padding: .5rem;
    
 }
@@ -105,23 +106,21 @@ li figure{
     width: 100%;
     display: list-item;
     margin: 0;
+    font-size: 1.3rem;
 }
 .main-grid-cover figure  li{
     font-size: 1.5rem;
-    word-spacing: 1.0rem;
+    word-spacing: .1rem;
 }
 p{
-    width: 12rem;
     font-size: 1.5rem;
-    word-spacing: .5rem;
     text-align: center;
 }
 h4{
-    font-size: 3.0rem;
+    font-size: 3rem;
 }
 a{
     display: block;
-    word-spacing: .3;
 }
 h3{
     font-size: 1rem;
@@ -131,7 +130,6 @@ footer{
     text-align: center;
     background-color: var(--colors);
     color: var(--color-text-title);
-    word-spacing: .3;
 }
 footer a{
     color: var(--colors-primary);
