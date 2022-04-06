@@ -1,136 +1,163 @@
-/* reset */
+/* reset css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 html{
     font-size: 62.5%;
 }
 body{
-    background-color: var(--colors-primary);
-    font-family: 'Poppins';
-    font-style: normal;
-    margin: 0px;
     font-size: 1.6rem;
+    font-family: "Poppins";
+    font-style: normal;
+    margin: 0;
+    background-color: #c82121;
 }
-header{
-    text-transform: capitalize;
-    background-color:var(--colors);
-    color: var(--color-text-title);
+h1,h2,h3,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+input,input[type="submit"], button{
+    border: 0;
+    background-color: transparent;
+    font-size: inherit;
 }
 a{
     text-decoration: none;
+    color: #222;
 }
-img {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    object-fit: cover;
+fieldset{
+    border: solid .1rem transparent;
 }
-figure{
-    margin: 0;
+*{
+    box-sizing: border-box;
 }
-h1,h2,p,h3,ul,ol,figure{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.main-grid-cover ul{
-    font-size: 0;
-}
-.main-grid-cover ul li{
-    display: inline-block;
-    font-size: initial;
-}
-nav ul li a{
-    display: inline-block;
-    font-family: 'Poppins';
-    text-decoration: none;
-    font-size: 3.0rem;
-    background-color: var(--colors);
-    color: var(--colors-primary);
-}
+/* theme de la page  */
 :root{
-    --color-text-title: #ffffff;
-    --colors-primary: #c82121;
-    --colors: #000814;
+    --color-theme-main: #000814;
+    --color-theme-secondary: #8B9DC3;
+    --color-theme-last: #DFE3EE;
+    --color-theme-default: #dfe6e9;
+    --color-theme-warning: rgba(218, 13, 13, 1);
 }
-h2{
-    color: var(--color-text-title);
-    font-size: 5rem;
+.warning{
+    background-color: var(--color-theme-warning);
+    text-align: center;
+    line-height: 3.5rem;
+    color: #fff;
+    font-weight: 400;
+    font-style: 2rem;
+    display: none;
+}
+.show-warning{
+    display: block;
+}
+header{
+    background-color: #000814;
     text-transform: initial;
 }
-
-/* theme */
-header{
-    margin-bottom: 2rem;
-}
 header h1{
-    line-height: 7rem;
+    line-height: 6.5rem;
     text-align: center;
-    color: var(--colors-primary);
+    color: #c82121;
+    font-weight: 300;
 }
-section h2, h3{
-    text-align: center;
+header h1::before{
+    content:url(../asset/send.svg);
+    vertical-align: middle;
+    margin-right: .5rem;
+    filter:invert(100%);/* inverser la couleur */
 }
-.main-grid-cover{
-    max-width: 120rem;
-    margin: 0 auto;
+main .inner-form{
+    max-width: 80rem;
+    margin: 5rem auto 0;
+    padding: 2rem;
 }
-section ul li{
-    display: inline-block;
-    width: calc(100% / 4);
-    margin: auto;
-    vertical-align: top;
+.inner-form ul{
+    list-style-type: none;
+    padding: 1rem;
 }
-li figure{
-    margin: auto;
-}
-.main-grid-cover figure {
-    display: flex;
-    flex-flow: column;
-    padding: .5rem;
-    margin: auto;
-}
-.main-grid-cover figure figcaption {
-    background-color: #222;
-    color: #fff;
-    padding: .5rem;
-}
-.main-grid-cover figure figcaption ul{
-    display: block;
-    line-height: 2rem;
-}
-.main-grid-cover figure figcaption ul li{
-    width: 100%;
-    display: list-item;
-    margin: 0;
-    font-size: 1.3rem;
-}
-.main-grid-cover figure  li{
-    font-size: 1.5rem;
-    word-spacing: .1rem;
-}
-main p{
+fieldset legend{
     font-size: 2rem;
-    text-align: center;
-    line-height: 10rem;
-    color: var(--color-text-title)
+    padding: 1rem;
+}
+fieldset{
+    padding: 1rem;
+    border: solid .1rem var(--color-theme-main);
+    border-radius: .4rem;
+}
+fieldset form *{
+    display: block;
+    width: 100%;
+    line-height: 3.5rem;
+    border: solid .1rem #ccc;
+    margin-bottom: .5rem;
+}
+fieldset form label, fieldset small{
+    border: 0;
+}
+fieldset small{
+    font-style: italic;
+    color: var(--color-theme-main);
+}
+fieldset form input[placeholder]{
+    font-style: italic;
+    transition-duration: 0.5s;
+       
+}
+/* bordure en style */
+fieldset form input{
+    border: 0;
+    border: solid .1rem transparent;
+    border-bottom-color: rgb(180, 178, 178);
+    width: 25%;
+    opacity: 0.8;
+    transition-duration: 0.5s; 
+}
+/* focus animé */
+fieldset form input:focus{
+    border-bottom-color: rgb(119, 117, 117);
+    width: 100%;
+    opacity: 1;
+}
+fieldset form input[placeholder]:focus,
+fieldset form input[type="date"]:focus{
+    outline: 0;
+    box-shadow: 0 0 1rem var(--color-theme-warning);
+    background-color: var(--color-theme-default);   
+}
+fieldset form input[type="submit"], fieldset form button{
+    background-color: var(--color-theme-main);
+    color: #DFE3EE;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .01rem;
+    cursor: pointer;
+    margin: 0;
+    font-size: initial;
+    border: 0;
+    width: 100%;
+    opacity: 1;
+    line-height: 4.5rem;
+}
+fieldset form input{
+    padding: .5rem;
 }
 footer{
     text-align: center;
-    background-color: var(--colors);
-    color: var(--color-text-title);
+    background-color: #000814;
+    color: #ffffff;
     letter-spacing: .1rem;
 }
 h3{
     font-size: 3rem;
-    color: var(--color-text-title);
+    color: #ffffff;
 }
 footer section{
     display: inline-block;
     margin: 5rem;
-    color: var(--colors-primary);
+    color: #c82121;
 }
 footer a{
-    color: var(--colors-primary);
+    color: #c82121;
 }
 footer p{
     font-size: 1.5rem;
