@@ -55,13 +55,12 @@ header{
     text-transform: initial;
 }
 header h1{
-    line-height: 6.5rem;
+    line-height: 7rem;
     text-align: center;
     color: #c82121;
     font-weight: 300;
 }
 header h1::before{
-    content:url(../asset/send.svg);
     vertical-align: middle;
     margin-right: .5rem;
     filter:invert(100%);/* inverser la couleur */
