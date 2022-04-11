@@ -60,6 +60,9 @@ header h1{
     color: #c82121;
     font-weight: 300;
 }
+header h1 i{
+    margin-right: 1rem;
+}
 header h1::before{
     vertical-align: middle;
     margin-right: .5rem;
